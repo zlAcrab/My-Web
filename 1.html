@@ -3,13 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script type="text/javascript" src='1.js'></script>
+	<style type="text/css">
+		div{
+			position: absolute;
+			border:1px solid #f08080;
+			width: 200px;
+			height: 200px;
+		}
+
+		input{
+			position: relative;
+		}
+		.active{
+			background: #000
+			color:#fff;
+		}
+	</style>
 </head>
 <body>
-	<input type="button" name="" value="按钮一" />
-	<input type="button" name="" value="按钮二" />
-	<input type="button" name="" value="按钮三" />
-	<div>11111111</div>
-	<div>222222222</div>
-	<div>333333333</div>
+	<div id="box">
+		<input type="button" id="btn1" value="第一个按钮" class="active" />
+		<input type="button" id="btn2" value="第二个按钮" />
+		<input type="button" id="btn3" value="第三个按钮" />
+		<div class="show">11111</div>
+		<div>22222</div>
+		<div>33333</div>
+	</div>
 </body>
 </html>
